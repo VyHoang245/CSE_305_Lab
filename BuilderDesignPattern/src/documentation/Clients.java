@@ -3,7 +3,6 @@ package documentation;
 import java.util.Scanner;
 
 import builderPattern.*;
-import builderPattern.ShortTerm;
 
 public class Clients {
     public static void main(String[] args) {
