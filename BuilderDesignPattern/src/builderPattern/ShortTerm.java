@@ -35,11 +35,18 @@ public class ShortTerm implements ContractBuilder {
 		return new Contract(contractID, propertyID, tenantID, rentAmount);
 	}
 
-	public ShortTerm(String contractID, String propertyID, String tenantID, double rentAmount) {
-		this.contractID = contractID;
-		this.propertyID = propertyID;
-		this.tenantID = tenantID;
-		this.rentAmount = rentAmount;
+	@Override
+	public String toString() {
+		return "ShortTerm [contractID=" + contractID + ", propertyID=" + propertyID + ", tenantID=" + tenantID
+				+ ", rentAmount=" + rentAmount + "]";
 	}
+
+	// public ShortTerm(String contractID, String propertyID, String tenantID,
+	// double rentAmount) {
+	// this.contractID = contractID;
+	// this.propertyID = propertyID;
+	// this.tenantID = tenantID;
+	// this.rentAmount = rentAmount;
+	// }
 
 }

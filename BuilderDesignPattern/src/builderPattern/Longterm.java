@@ -35,11 +35,10 @@ public class Longterm implements ContractBuilder {
 		return new Contract(contractID, propertyID, tenantID, rentAmount);
 	}
 
-	public Longterm(String contractID, String propertyID, String tenantID, double rentAmount) {
-		this.contractID = contractID;
-		this.propertyID = propertyID;
-		this.tenantID = tenantID;
-		this.rentAmount = rentAmount;
+	@Override
+	public String toString() {
+		return "Longterm [contractID=" + contractID + ", propertyID=" + propertyID + ", tenantID=" + tenantID
+				+ ", rentAmount=" + rentAmount + "]";
 	}
 
 }

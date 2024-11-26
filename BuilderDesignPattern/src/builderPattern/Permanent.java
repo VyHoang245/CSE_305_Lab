@@ -1,39 +1,44 @@
 package builderPattern;
 
-public class Permanent implements ContractBuilder{
-	private String contractID; 
-	private String propertyID; 
-	private String tenantID; 
+public class Permanent implements ContractBuilder {
+	private String contractID;
+	private String propertyID;
+	private String tenantID;
 	private double rentAmount;
 
 	@Override
 	public ContractBuilder setContractID(String contractID) {
 		this.contractID = contractID;
-        return this;
+		return this;
 	}
 
 	@Override
 	public ContractBuilder setPropertyID(String propertyID) {
 		this.propertyID = propertyID;
-        return this;
+		return this;
 	}
 
 	@Override
 	public ContractBuilder setTenantID(String tenantID) {
 		this.tenantID = tenantID;
-        return this;
+		return this;
 	}
 
 	@Override
 	public ContractBuilder setRentAmount(Double rentAmount) {
 		this.rentAmount = rentAmount;
-        return this;
+		return this;
 	}
 
 	@Override
 	public Contract build() {
-		return new Contract(contractID,propertyID,tenantID,rentAmount);
+		return new Contract(contractID, propertyID, tenantID, rentAmount);
 	}
-	
-}
 
+	@Override
+	public String toString() {
+		return "Permanent [contractID=" + contractID + ", propertyID=" + propertyID + ", tenantID=" + tenantID
+				+ ", rentAmount=" + rentAmount + "]";
+	}
+
+}

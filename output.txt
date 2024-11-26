@@ -1,0 +1,1 @@
+ShortTerm [contractID=3, propertyID=2, tenantID=s, rentAmount=12.0]
